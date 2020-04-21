@@ -17,6 +17,8 @@ if (!firebase.apps.length) {
 	firebase.initializeApp(firebaseConfig)
 }
 
+console.log('firebase')
+
 const db = firebase.firestore()
 
 export { db }

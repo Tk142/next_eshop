@@ -1,9 +1,19 @@
 .navigation {
     display: flex;
+    justify-content: center;
 
     a {
         margin-right: 1em;
         color: white;
         text-decoration: none;
+        padding: 0.25em;
+        border-radius: 5px;
+        transition: 0.4s linear;
+
+        &:hover {
+            background: #ffffff;
+            color: #006100;
+            transition: 0.4s linear;
+        }
     }
 }

@@ -1,10 +1,10 @@
 import React from 'react'
 import Nav from '../Nav'
+import './index.scss'
 
 const Header = () => {
 	return (
-		<header>
-			header
+		<header className='header'>
 			<Nav />
 		</header>
 	)

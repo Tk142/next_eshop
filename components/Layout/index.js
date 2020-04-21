@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Header from '../Header'
 import Footer from '../Footer'
 import Head from 'next/head'
+import './index.scss'
 
 const Layout = props => {
 	return (
@@ -11,7 +12,7 @@ const Layout = props => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<Header />
-			<main>{props.children}</main>
+			<main className='main'>{props.children}</main>
 			<Footer />
 		</Fragment>
 	)
