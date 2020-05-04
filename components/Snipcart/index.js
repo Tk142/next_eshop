@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import snipcartConfig from './config'
 
 const Snipcart = () => {
 	return (
@@ -13,7 +14,7 @@ const Snipcart = () => {
 			</Head>
 			<div
 				id='snipcart'
-				data-api-key='NDBlMWQxODktNzFkZS00MDkzLWI3NjgtNDMwN2QyODVmOWExNjM3MTc4MDk0MzYyOTQ4Njk4'
+				data-api-key={snipcartConfig.apikey}
 				data-config-add-product-behavior='none'
 			></div>
 		</>
