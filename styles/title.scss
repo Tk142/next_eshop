@@ -1,0 +1,15 @@
+.title {
+    text-align: center;
+    margin: 0.5em;
+
+    &::before,
+    &::after {
+        display: inline-block;
+        content: "";
+        border-top: .2rem solid black;
+        width: 4rem;
+        margin: 0 1rem;
+        transform: translateY(-0.5rem);
+
+    }
+}

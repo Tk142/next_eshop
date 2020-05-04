@@ -27,6 +27,15 @@
     transition: 0.4s linear;
 }
 
+.snipcart-checkout{
+    width: 2em;
+    margin: auto;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 @keyframes expand {
     0% {
         transform: scale(0);

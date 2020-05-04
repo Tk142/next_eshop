@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import Header from '../Header'
 import Footer from '../Footer'
 import Head from 'next/head'
-import './index.scss'
+import Snipcart from '../Snipcart'
 
 const Layout = props => {
 	return (
@@ -12,7 +12,11 @@ const Layout = props => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<Header />
-			<main className='main'>{props.children}</main>
+			<main className='main'>
+				<Snipcart />
+				{props.children}
+			</main>
+
 			<Footer />
 		</Fragment>
 	)

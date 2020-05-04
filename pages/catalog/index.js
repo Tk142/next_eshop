@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import Layout from '../../components/Layout'
 import { db } from '../../firebase'
 import ProductList from '../../components/ProductList'
+import Spinner from '../../components/Spinner'
 
 const useProducts = () => {
 	const [products, setProducts] = useState([])
@@ -20,15 +20,17 @@ const useProducts = () => {
 
 const Catalog = () => {
 	const products = useProducts()
-	console.log(products)
-	return (
-		<div className='container'>
-			<Layout>
-				<h1>Catalog</h1>
-				<ProductList products={products} />
-			</Layout>
-		</div>
-	)
+	let content = null
+
+	products.length !== 0
+		? (content = (
+				<>
+					<h1 className='title'>Catalog</h1> <ProductList products={products} />
+				</>
+		  ))
+		: (content = <Spinner />)
+
+	return <div className='container'>{content}</div>
 }
 
 export default Catalog

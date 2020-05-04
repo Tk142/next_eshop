@@ -1,5 +1,4 @@
 import React from 'react'
-import './index.scss'
 
 const Footer = () => {
 	const date = new Date()

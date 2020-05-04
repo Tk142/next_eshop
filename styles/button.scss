@@ -1,0 +1,26 @@
+.button {
+    padding: 0 0.5em;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background: unset;
+    transition: 0.4s linear;
+    cursor: pointer;
+
+    &:hover {
+        background: #ffffff;
+        color: #000000;
+        transition: 0.4s linear;
+    }
+
+    &-black {
+        color: #006100;
+        border: 1px solid #006100;
+
+        &:hover {
+            background: #006100;
+            color: #ffffff;
+        }
+    }
+}
