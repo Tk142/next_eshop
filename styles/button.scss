@@ -14,12 +14,14 @@
         transition: 0.4s linear;
     }
 
-    &-black {
-        color: #006100;
-        border: 1px solid #006100;
+    &-inverted {
+        color: #000000;
+        border: 1px solid #000000;
+        padding: 0.5rem 1em;
+        margin-left: 0.5em;
 
         &:hover {
-            background: #006100;
+            background: #000000;
             color: #ffffff;
         }
     }

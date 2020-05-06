@@ -5,8 +5,12 @@ const Product = props => {
 	const { id, name, description, price } = props.product
 	const [amount, setAmount] = useState('')
 
-	const handleChange = event => {
-		setAmount(event.target.value)
+	const handleChange = e => {
+		const newAmount = e.target.value
+
+		if (newAmount > 0) {
+			setAmount(newAmount)
+		}
 	}
 
 	return (
@@ -17,7 +21,7 @@ const Product = props => {
 				<div className='product__input'>
 					<p>€{price}</p>
 					<input
-						onChange={handleChange}
+						onChange={e => handleChange(e)}
 						type='number'
 						placeholder='0'
 						value={amount}

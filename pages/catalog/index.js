@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { db } from '../../firebase'
 import ProductList from '../../components/ProductList'
-import Spinner from '../../components/Spinner'
+import { Spinner } from '../../components/Spinner'
+import { motion } from 'framer-motion'
 
 const useProducts = () => {
 	const [products, setProducts] = useState([])
@@ -30,7 +31,11 @@ const Catalog = () => {
 		  ))
 		: (content = <Spinner />)
 
-	return <div className='container'>{content}</div>
+	return (
+		<motion.div exit={{ opacity: 0 }}>
+			<div className='container'>{content}</div>
+		</motion.div>
+	)
 }
 
 export default Catalog
