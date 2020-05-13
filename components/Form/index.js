@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
-import config from '../../emailJS/config'
+import config from '../../utils/emailJS/config'
 import Input from '../Input'
 import { EmailSpinner } from '../Spinner'
 

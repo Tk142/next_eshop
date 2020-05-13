@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { db } from '../../firebase'
+import { db } from '../../utils/firebase'
 import ProductList from '../../components/ProductList'
 import { Spinner } from '../../components/Spinner'
 import { motion } from 'framer-motion'
